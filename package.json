@@ -1,0 +1,37 @@
+{
+  "name": "fleury-api-novo-agendamento",
+  "version": "1.0.0",
+  "description": "fleury-api-novo-agendamento",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.fleury.com.br/nodejs/fleury-api-novo-agendamento.git"
+  },
+  "author": "Leonardo",
+  "license": "ISC",
+  "apidoc": {
+    "name": "API Novo Agendamento",
+    "version": "0.1.0",
+    "description": "API Novo Agendamento",
+    "title": "API Novo Agendamento",
+    "url": ""
+  },
+  "dependencies": {
+    "apidoc": "^0.17.6",
+    "async": "^2.6.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "moment": "^2.22.1",
+    "morgan": "^1.9.0",
+    "mssql": "^4.1.0",
+    "npm": "^6.1.0",
+    "tedious": "^2.3.1",
+    "winston": "^3.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+version: '3.4'
+services:
+
+
+  api:
+    image: '${REGISTRY}/${TAG}:${VERSAO}'
+    hostname: api
+    environment:
+      NODE_ENV: 'development'
+      SERVER_PORT: 8000
+      HOST_BDCORP: '${HOST_BDCORP}'
+      PORT_BDCORP: '${IP_BDCORP}'
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+      #placement:
+      #  constraints: [node.role == worker]
+    #command: node_modules/.bin/nodemon --exec node index.js
+    ports:
+      - '8005:8000'
+    tty: true
+    extra_hosts:
+      - '${HOST_BDCORP}:${IP_BDCORP}'
